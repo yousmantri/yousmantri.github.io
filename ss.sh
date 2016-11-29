@@ -1,9 +1,10 @@
 #!/bin/sh
 iptables -F
-yum install m2crypto python-setuptools
+yum install m2crypto
+yum install python-setuptools
 easy_install pip
 pip install shadowsocks
-echo { >/etc/shadowsocks.json
+echo { >>/etc/shadowsocks.json
 echo    \"server\":\"0.0.0.0\",>>/etc/shadowsocks.json
 echo    \"server_port\":443,>>/etc/shadowsocks.json
 echo    \"local_address\": \"127.0.0.1\",>>/etc/shadowsocks.json
