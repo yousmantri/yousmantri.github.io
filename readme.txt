@@ -1,1 +1,1 @@
-PhotoshopÉè¼ÆĞ¡¼¼ÇÉ http://photoshopetiquette.com/files/
+ï»¿Photoshopè®¾è®¡å°æŠ€å·§ http://photoshopetiquette.com/files/
