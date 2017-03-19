@@ -14,6 +14,14 @@ p {
 	font-size:18px;
 	text-shadow: 0 -1px rgba(255, 163, 2, 0.3);
 }
+div.header{
+	position: fixed;
+	background-color: rgba(0,0,0,.2);
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
 div.links{
 	position: fixed;
 }
