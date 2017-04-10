@@ -24,3 +24,8 @@ git status
 
 5.从远程服务器获取 git pull origin master
 
+为了方便快速提交，写一个bat批处理。能够快速提交代码
+
+git add .
+git commit -m "something"
+git push origin master
