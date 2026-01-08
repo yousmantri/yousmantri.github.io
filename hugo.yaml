@@ -2,3 +2,26 @@ baseURL: "https://yousmantri.github.io/"
 languageCode: "zh-cn"
 title: "Yousman 的博客"
 theme: "PaperMod"
+
+params:
+  profileMode:
+    enabled: true
+    title: "Yousman"
+    subtitle: "ESP32 / 后端 / uniapp 开发笔记"
+    buttons:
+      - name: 文章
+        url: /posts/
+      - name: 项目
+        url: /projects/
+
+menu:
+  main:
+    - name: 文章
+      url: /posts/
+      weight: 1
+    - name: 项目
+      url: /projects/
+      weight: 2
+    - name: 关于
+      url: /about/
+      weight: 3
