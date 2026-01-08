@@ -2,18 +2,69 @@ baseURL: "https://yousmantri.github.io/"
 languageCode: "zh-cn"
 title: "Yousman 的博客"
 theme: "PaperMod"
+
 canonifyURLs: true
 relativeURLs: false
+
+# 让中文摘要更友好
+summaryLength: 120
+
+# 建议启用：生成搜索、RSS、sitemap 等
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON   # 给 PaperMod Search 用
+
 params:
+  env: production
+  defaultTheme: auto      # auto / dark / light
+  disableThemeToggle: false
+
+  # 主页：个人名片模式
   profileMode:
     enabled: true
     title: "Yousman"
-    subtitle: "ESP32 / 后端 / uniapp 开发笔记"
+    subtitle: "ESP32(MicroPython) / 后端 / uniapp 点单与业务系统"
+    imageUrl: "/img/avatar.png"   # 你之后放头像
+    imageWidth: 120
+    imageHeight: 120
     buttons:
       - name: 文章
-        url: /posts/
+        url: "/posts/"
       - name: 项目
-        url: /projects/
+        url: "/projects/"
+      - name: 关于
+        url: "/about/"
+
+  # 文章体验
+  showReadingTime: true
+  showShareButtons: true
+  showPostNavLinks: true
+  showBreadCrumbs: true
+  showCodeCopyButtons: true
+  showToc: true
+  tocOpen: false
+
+  # 搜索
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    threshold: 0.3
+    distance: 1000
+    minMatchCharLength: 2
+
+  # SEO
+  description: "Yousman 的技术博客：ESP32、IoT 后台、WebSocket、uniapp 点单小程序、后端开发踩坑复盘。"
+  keywords: ["ESP32", "MicroPython", "uniapp", "WebSocket", "后端", "IoT"]
+  author: "Yousman"
+
+  # 社交
+  socialIcons:
+    - name: github
+      url: "https://github.com/yousmantri"
+    - name: email
+      url: "mailto:your_email@example.com"
 
 menu:
   main:
@@ -23,6 +74,10 @@ menu:
     - name: 项目
       url: /projects/
       weight: 2
+    - name: 搜索
+      url: /search/
+      weight: 3
     - name: 关于
       url: /about/
-      weight: 3
+      weight: 4
+
